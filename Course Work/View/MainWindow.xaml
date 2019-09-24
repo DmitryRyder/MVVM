@@ -1,0 +1,395 @@
+﻿<Window x:Class="Course_Work.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Work"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Microsoft_Windows_Themes="http://schemas.microsoft.com/wpf/2008/toolkit"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Курсовой проект"
+            Height="600"
+            Width="1080"
+            MinHeight="250"
+            MinWidth="600"
+            Style="{StaticResource VS2012WindowStyle}" WindowStartupLocation="CenterScreen" WindowStyle="None" ShowInTaskbar="True">
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="230"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="230"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="70"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <DataTemplate x:Key="RowDetailTemplate">
+            <StackPanel Margin="0" x:Name="RowDetailGrid" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                <Border HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Border.Background>
+                        <SolidColorBrush x:Name="BorderColor" Color="#095280" />
+                    </Border.Background>
+                </Border>
+                <TextBlock         Margin="10 10 0 10"
+						           HorizontalAlignment="Center"
+						           FontSize="14"
+						           Text="Материал рамы: " />
+
+                <TextBlock         Margin="10 10 50 10"
+						           HorizontalAlignment="Center"
+						           FontSize="14"
+						           Text="{Binding Path = Frame.Material}" />
+
+                <TextBlock         Margin="10 10 0 10"
+						           HorizontalAlignment="Center"
+						           FontSize="14"
+						           Text="Размер рамы: " />
+                <TextBlock 
+						           Margin="10 10 50 10"
+                                   FontSize="14"
+						           HorizontalAlignment="Center"
+						           Text="{Binding Path = Frame.Size}" />
+
+                <TextBlock         Margin="10 10 0 10"
+						           HorizontalAlignment="Center"
+						           FontSize="14"
+						           Text="Добавлено: " />
+
+                <TextBlock         Margin="10 10 50 10"
+						           HorizontalAlignment="Center"
+						           FontSize="14"
+						           Text="{Binding Path = CreationTime}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid x:Name="Main">
+        <Image x:Name="myImage" Source="/images/Pic1.png" Margin="0 40 0 20"  />
+        <Grid Panel.ZIndex="0" MouseDown="Grid_MouseDown" x:Name="GridBackground" Background="#55313131" Opacity="0"/>
+        <Grid Visibility="Hidden" Margin="70 50 0 0" x:Name="CustomDataGridMain" Height="auto" Width="auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+            </Grid.RowDefinitions>
+            <DataGrid
+                x:Name="dataGrid2"
+                Grid.Row="0"
+                CanUserResizeColumns="True"
+                RowDetailsVisibilityMode = "Collapsed"  
+                MouseRightButtonDown="ToggleButtonClick_RightClick"
+                SelectionMode="Single"
+                SelectionChanged="dataGrid2_SelectionChanded"
+		        HorizontalAlignment="Center"
+		        VerticalAlignment="Top"
+		        AlternationCount="2"
+	            ItemsSource="{Binding Bicycles}"
+                CanUserSortColumns="True"
+                CanUserAddRows="False"
+                MinRowHeight="40" 
+                AutoGenerateColumns="False"
+                RowDetailsTemplate="{StaticResource RowDetailTemplate}"
+		        RowDetailsVisibilityChanged="dataGrid1_RowDetailsVisibilityChanged"
+                materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+                materialDesign:DataGridAssist.ColumnHeaderPadding="2">
+                <DataGrid.RowHeaderTemplate>
+                    <DataTemplate>
+                        <ToggleButton Margin="-6 0 0 0" Width="30" Height="40" x:Name="RowHeaderToggleButton" Style="{StaticResource MaterialDesignActionToggleButton}" Click="ToggleButtonClick_RightClick">
+                            <ToggleButton.Content>
+                                <materialDesign:PackIcon Foreground="Gray" Width="30" Height="40" Kind="ArrowDownBold" />
+                            </ToggleButton.Content>
+                            <materialDesign:ToggleButtonAssist.OnContent>
+                                <materialDesign:PackIcon Foreground="Gray" Width="30" Height="40" Kind="ArrowUpBold" />
+                            </materialDesign:ToggleButtonAssist.OnContent>
+                        </ToggleButton>
+                    </DataTemplate>
+                </DataGrid.RowHeaderTemplate>
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        IsReadOnly="True"
+                        MinWidth="95"
+                        Width="95"
+				        Binding="{Binding Path=ID}"
+				        Header="ID"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <materialDesign:MaterialDataGridTextColumn
+                        MinWidth="175" Width="175"
+				        Binding="{Binding Path=Model}"
+				        Header="Модель велосипеда"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </materialDesign:MaterialDataGridTextColumn>
+                    <materialDesign:MaterialDataGridTextColumn
+                        MinWidth="180" Width="*"
+				        Binding="{Binding Path=Manufacture}"
+				        Header="Производитель"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style
+                                TargetType="{x:Type DataGridColumnHeader}"
+                                BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                <Setter
+                                    Property="HorizontalAlignment"
+                                    Value="Center" />
+                                <Setter
+                                    Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <TextBlock
+                                                TextWrapping="Wrap"
+                                                Text="{Binding}"
+                                                TextAlignment="Center" />
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </materialDesign:MaterialDataGridTextColumn>
+                    <materialDesign:MaterialDataGridTextColumn
+                        MinWidth="150" Width="*"
+				        Binding="{Binding Path=Year}"
+				        Header="Год выпуска"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style
+                                TargetType="{x:Type DataGridColumnHeader}"
+                                BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                <Setter
+                                    Property="HorizontalAlignment"
+                                    Value="Center" />
+                                <Setter
+                                    Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <TextBlock
+                                                TextWrapping="Wrap"
+                                                Text="{Binding}"
+                                                TextAlignment="Center" />
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </materialDesign:MaterialDataGridTextColumn>
+                    <materialDesign:MaterialDataGridTextColumn
+                        MinWidth="135" Width="*"
+				        Binding="{Binding Path=NumberOfSpeeds}"
+				        Header="Количество скоростей"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </materialDesign:MaterialDataGridTextColumn>
+                    <materialDesign:MaterialDataGridTextColumn
+                        MinWidth="150" Width="*"
+				        Binding="{Binding Path=Type}"
+				        Header="Тип велосипеда"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </materialDesign:MaterialDataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Panel.ZIndex="2" Height="50" VerticalAlignment="Top" Background="#FF31577E">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
+            </Grid.Effect>
+            <ToolBarTray Background="Transparent" Margin="70 0 0 0">
+                <ToolBar Height="50" Padding="0" Background="Transparent" Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False">
+                    <Button x:Name="CreateTable" IsEnabled="True" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6" Click="CreateTable_Click">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="TableLarge" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="AutoAdd" IsEnabled="True" Command="{Binding InputDialogCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="PlusOne" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="Add" IsEnabled="True" Command="{Binding AddStarCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="PlusCircleOutline" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="Delete" Command="ApplicationCommands.Delete" CommandTarget="{Binding ElementName=dataGrid2}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="MinusCircleOutline" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="Edit" Command="{Binding EditDialogCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6" >
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Pencil" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="ClearTable" Command="{Binding ClearTable}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="TableColumnRemove" Width="25" Height="25"/>
+                    </Button>
+                    <Separator Width="2" Background="#FF5C99D6"/>
+                    <Button x:Name="Save" Command="{Binding WriteToRepositoryCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ContentSave" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="SaveAs" Command="{Binding SaveCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ContentSaveAll" Width="25" Height="25"/>
+                    </Button>
+                    <Separator Width="2" Background="#FF5C99D6"/>
+                    <Button x:Name="Open" Command="{Binding ReadRepositoryCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="OpenInApp" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="OpenDialog" Command="{Binding OpenCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="OpenInNew" Width="25" Height="25"/>
+                    </Button>
+                    <Separator Width="2" Background="#FF5C99D6"/>
+                    <Button x:Name="DeleteRepository" Command="{Binding DeleteRepositoryCommand}" materialDesign:ShadowAssist.ShadowDepth="Depth0" Style="{StaticResource MaterialDesignRaisedLightButton}" Padding="0" Margin="0 0 0 0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF31577E" BorderBrush="{x:Null}" BorderThickness="0"  Foreground="#FF5C99D6">
+                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="DeleteRestore" Width="25" Height="25"/>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+            <materialDesign:PopupBox HorizontalAlignment="Right" Foreground="#FF5C99D6" Margin="0 0 20 0" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                <StackPanel Width="150">
+                    <Button Content="Settings"/>
+                    <Button Content="Account"/>
+                    <Button Content="Help"/>
+                    <Separator/>
+                    <Button Content="Logout"/>
+                </StackPanel>
+            </materialDesign:PopupBox>
+        </Grid>
+        <Grid x:Name="GridMenu" Panel.ZIndex="2" Width="70" HorizontalAlignment="Left" Background="#FF31577E">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+            </Grid.Effect>
+            <StackPanel>
+                <Grid Height="91" Background="#efeff2" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Button x:Name="ButtonOpenMenu" Height="25" Width="70" Margin="0 14 0 0" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#686868" Click="ButtonOpenMenu_Click">
+                        <materialDesign:PackIcon Kind="Menu" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="25" Width="70" Margin="0 14 0 0" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#686868" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"/>
+                    </Button>
+                    <Grid x:Name="AboutAutor" Visibility="Collapsed">
+                        <TextBlock HorizontalAlignment="Left" Foreground="#686868" Margin="10 7 0 0" FontFamily="Gabriola" FontWeight="Bold" FontSize="20">The Course Work by</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" Foreground="#686868" Margin="20 28 0 0" FontFamily="Gabriola" FontWeight="Bold" FontSize="20">Chirkov Dmitry</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" Foreground="#686868" Margin="17 46 0 0" FontFamily="Gabriola" FontWeight="Bold" FontSize="20">from zit-31 group</TextBlock>
+                    </Grid>
+                </Grid>
+                <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding CreateMemoryRepositoryCommand}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="Memory" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="Репозиторий в памяти" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding CreateTextRepositoryCommand}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="ClipboardText" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="Текстовый репозиторий" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding CreateBinaryRepositoryCommand}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="Basket" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="Бинарный репозиторий" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="Json" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="Репозиторий JSON" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="AccessPoint" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="Репозиторий SOAP" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <Button HorizontalAlignment="Left" Command="{Binding}" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Width="230" Height="60" Padding="0" Margin="-7,0,0,0">
+                                <StackPanel Orientation="Horizontal" Width="230" Height="60">
+                                    <materialDesign:PackIcon Foreground="#FF5C99D6" Kind="FileXml" Width="25" Height="25" Margin="17 17 10 10"/>
+                                    <TextBlock VerticalAlignment="Center" Foreground="#FF5C99D6" Margin="8 10" Text="XML Репозиторий" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <StatusBar Panel.ZIndex="3" Background="#095280" Height="25" Name="statusBar1" VerticalAlignment="Bottom" >
+            <Grid x:Name="StatusGrid" DataContext="{StaticResource StatusBar}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"></ColumnDefinition>
+                    <ColumnDefinition MinWidth="300" ></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Foreground="#f2efda" FontSize="12"  FontFamily="Rockwell" FontWeight="Bold" Opacity="0.66" Content="{Binding State, Mode=OneWay}" Grid.Column="0" Height="25" HorizontalAlignment="Left" Name="StatusLabel" VerticalAlignment="Bottom" Margin="0,-1,0,-5" Width="auto" />
+                <Label Foreground="#f2efda" FontSize="12" FontFamily="Rockwell" FontWeight="Bold" Opacity="0.66" Content="Текущий репозиторий :" Grid.Column="1" Height="25" HorizontalAlignment="Left" Name="CurrentRepositoryLabel" VerticalAlignment="Bottom" Width="148" Margin="0,-1,0,-5" />
+                <TextBlock Foreground="Yellow" FontSize="12" FontFamily="Rockwell" FontWeight="Bold" Opacity="0.66" Text="{Binding CurrentRepository, Mode=OneWay}" Grid.Column="1" Height="25" HorizontalAlignment="Left" Name="CurrentRepositoryText" VerticalAlignment="Bottom" MinWidth="145" Width="174" Margin="153,0,0,-10" />
+                <Label Foreground="#f2efda" FontSize="12" FontFamily="Rockwell" FontWeight="Bold" Opacity="0.66" Content="Имя файла :" Grid.Column="2" Height="25" HorizontalAlignment="Left" Name="CurrentRepositoryAdressLabel" VerticalAlignment="Bottom" Width="145" Margin="40,-1,0,-5" />
+                <TextBlock Foreground="Yellow" FontSize="12" FontFamily="Rockwell" FontWeight="Bold" Opacity="0.66" Text="{Binding FileName, Mode=OneWay}" Grid.Column="2" Height="25" HorizontalAlignment="Left" Name="CurrentRepositoryAdressText" VerticalAlignment="Bottom" Width="auto" Margin="129,0,0,-10"  />
+            </Grid>
+        </StatusBar>
+    </Grid>
+</Window>

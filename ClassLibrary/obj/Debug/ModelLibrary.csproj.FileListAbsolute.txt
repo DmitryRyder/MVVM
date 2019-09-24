@@ -1,0 +1,6 @@
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\obj\Debug\ModelLibrary.csprojAssemblyReference.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\obj\Debug\ModelLibrary.csproj.CoreCompileInputs.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\Текущее\Проекты\Course Work\ClassLibrary\obj\Debug\ClassLibrary.pdb
