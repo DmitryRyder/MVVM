@@ -1,0 +1,76 @@
+C:\Projects\ControlsApp\ControlsApp\bin\Debug\ControlsApp.exe.config
+C:\Projects\ControlsApp\ControlsApp\bin\Debug\ControlsApp.exe
+C:\Projects\ControlsApp\ControlsApp\bin\Debug\ControlsApp.pdb
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.csprojResolveAssemblyReference.cache
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\MainWindow.g.cs
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\App.g.cs
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.cache
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.lref
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\MainWindow.baml
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.g.resources
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.Properties.Resources.resources
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.csproj.GenerateResource.Cache
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.csproj.CoreCompileInputs.cache
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.exe
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\ControlsApp.pdb
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\Window1.g.cs
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\Window1.baml
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\Window2.g.cs
+C:\Projects\ControlsApp\ControlsApp\obj\Debug\Window2.baml
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe.config
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.pdb
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csprojResolveAssemblyReference.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\App.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.lref
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.baml
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.baml
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.baml
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.g.resources
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.Properties.Resources.resources
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.GenerateResource.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.CoreCompileInputs.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.exe
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.pdb
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe.config
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.pdb
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csprojResolveAssemblyReference.cache
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.g.cs
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.g.cs
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.g.cs
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\App.g.cs
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.cache
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.lref
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.baml
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.baml
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.baml
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.g.resources
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.Properties.Resources.resources
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.GenerateResource.cache
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.CoreCompileInputs.cache
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.exe
+E:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe.config
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\bin\Debug\ControlsApp.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csprojAssemblyReference.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\App.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp_MarkupCompile.lref
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\MainWindow.baml
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window1.baml
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\Window2.baml
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.g.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.Properties.Resources.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.GenerateResource.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.csproj.CoreCompileInputs.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Controls_and_Containers\ControlsApp\obj\Debug\ControlsApp.pdb
