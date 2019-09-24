@@ -1,0 +1,32 @@
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csprojResolveAssemblyReference.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\MainWindow.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\App.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty_MarkupCompile.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty_MarkupCompile.lref
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.exe.config
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.exe
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.pdb
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\MainWindow.baml
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.g.resources
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.Properties.Resources.resources
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csproj.GenerateResource.Cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csproj.CoreCompileInputs.cache
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.exe
+C:\Users\ryder\Desktop\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.exe.config
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\bin\Debug\Dependency_Porperty.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csprojAssemblyReference.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\MainWindow.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\App.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty_MarkupCompile.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty_MarkupCompile.lref
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\MainWindow.baml
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.g.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.Properties.Resources.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csproj.GenerateResource.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.csproj.CoreCompileInputs.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\Dependency_Property\Dependency_Porperty\Dependency_Porperty\obj\Debug\Dependency_Porperty.pdb
