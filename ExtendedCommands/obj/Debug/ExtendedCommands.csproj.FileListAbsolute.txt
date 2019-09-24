@@ -1,0 +1,15 @@
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.csprojAssemblyReference.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\MainWindow.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\App.g.cs
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands_MarkupCompile.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands_MarkupCompile.lref
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\bin\Debug\ExtendedCommands.exe.config
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\bin\Debug\ExtendedCommands.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\bin\Debug\ExtendedCommands.pdb
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\MainWindow.baml
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.g.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.Properties.Resources.resources
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.csproj.GenerateResource.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.csproj.CoreCompileInputs.cache
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.exe
+D:\Основные папки\GoogleDrive\Универ\Программирование\C#_Learn_Medium\WPF\ExtendedCommands\ExtendedCommands\obj\Debug\ExtendedCommands.pdb
